@@ -30,20 +30,32 @@
     </nav>
     <hr />
     <div class="texto">
-      <h2>Si queres aprender no importa la edad ni el momento</h2>
+      <h3>Si queres aprender no importa la edad ni el momento</h2>
       <form action="/cargar-datos" method="post">
-        <label for="nombre">Nombre </label><br />
+        <label for="nombre">Nombre </label>
         <input type="text" id="nombre" name="nombre" required /><br />
-        <label for="nombre">Curso que te interesa</label><br />
-        <input type="text" id="datos" name="datos" required /><br />
-        <label for="nombre">horario disponible</label><br />
-        <input type="text" id="datos" name="datos" required /><br /><br />
-        <input
-          type="file"
-          id="nombre"
-          name="curso"
-          accept="image/*"
-        /><br /><br />
+        <label for="curso">Que materia te interesa:</label>
+        <select name="" id="">
+          <option value="">Matematica</option>
+          <option value="">Fisica</option>
+          <option value="">Fisicoquimica</option></select
+        ><br />
+        <label for="año">Selecciona el año</label>
+        <select name="" id="">
+          <option value="">1°</option>
+          <option value="">2°</option>
+          <option value="">3°</option>
+          <option value="">4°</option>
+          <option value="">5°</option>
+          <option value="">6°</option></select
+        ><br />
+        <label for="horario">Horario disponible</label>
+        <input type="radio" name="" id="" />
+        <label for="">Mañana</label>
+        <input type="radio" name="" id="" />
+        <label for="">Tarde</label>
+        <input type="radio" name="" id="" />
+        <label for="">Noche</label><br />
         <input type="submit" value="Enviar" />
       </form>
     </div>
