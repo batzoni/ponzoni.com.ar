@@ -1,74 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <title>Profesor Ponzoni</title>
   </head>
   <body>
-    <header>
-      <h1>Profesor Ponzoni</h1>
-      <h2>Tu lugar par aprender</h2>
-    </header>
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html"> Quien Soy?</a></li>
-        <li>Matematica</li>
-        <li><a href="Fisicoquimica.html">FisicoQuimica</a></li>
-        <li><a href="Fisica.html">Fisica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+    <a href="#cursos" class="skip-link">Saltar al contenido</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Profesor Ponzoni</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">¿Quién Soy?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matematica.html">Matemática</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fisicoquimica.html">Fisicoquímica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fisica.html">Física</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <header class="container mt-5 pt-5">
+      <h1>Profesor Ponzoni</h1>
+      <h2>Tu lugar para aprender</h2>
+    </header>
     <hr />
-    <div class="texto">
+    <div class="container texto my-5">
       <h3 id="cursos">Cursos</h3>
       <ol>
         <li>
           <h3>Primer Año</h3>
-          <img src="../imagenes/1°mat.jpg" />
+          <img
+            src="../imagenes/1°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Primer Año"
+          />
           <p>En este año recorreremos los contenidos de 1° año de secundario</p>
         </li>
         <li>
           <h3>Segundo Año</h3>
-          <img src="../imagenes/2°mat.jpg" />
+          <img
+            src="../imagenes/2°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Segundo Año"
+          />
           <p>En este año recorreremos los contenidos de 2° año de secundario</p>
         </li>
         <li>
-          <h3>Tercer año</h3>
-          <img src="../imagenes/3°mat.jpg" />
+          <h3>Tercer Año</h3>
+          <img
+            src="../imagenes/3°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Tercer Año"
+          />
           <p>En este año recorreremos los contenidos de 3° año de secundario</p>
         </li>
         <li>
-          <h3>Cuarto año</h3>
-          <img src="../imagenes/4°mat.jpg" />
+          <h3>Cuarto Año</h3>
+          <img
+            src="../imagenes/4°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Cuarto Año"
+          />
           <p>En este año recorreremos los contenidos de 4° año de secundario</p>
         </li>
         <li>
-          <h3>Quinto año</h3>
-          <img src="../imagenes/5°mat.jpg" />
+          <h3>Quinto Año</h3>
+          <img
+            src="../imagenes/5°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Quinto Año"
+          />
           <p>En este año recorreremos los contenidos de 5° año de secundario</p>
         </li>
         <li>
-          <h3>Sexto año</h3>
-          <img src="../imagenes/6°mat.jpg" />
+          <h3>Sexto Año</h3>
+          <img
+            src="../imagenes/6°mat.jpg"
+            class="img-fluid"
+            alt="Contenido de Sexto Año"
+          />
           <p>En este año recorreremos los contenidos de 6° año de secundario</p>
         </li>
       </ol>
     </div>
-    <footer>
+    <footer class="text-center">
       <p>
         © 2025 Ponzoni - "La educación, como la luz del sol, puede y debe llegar
         a todos"
       </p>
     </footer>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

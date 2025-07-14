@@ -1,69 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <title>Profesor Ponzoni</title>
   </head>
   <body>
-    <header>
-      <h1>Profesor Ponzoni</h1>
-      <h2>Tu lugar par aprender</h2>
-    </header>
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html"> Quien Soy?</a></li>
-        <li><a href="matematica.html">Matematica</a></li>
-        <li><a href="Fisicoquimica.html">FisicoQuimica</a></li>
-        <li><a href="Fisica.html">Fisica</a></li>
-        <li>Contacto</li>
-      </ul>
+    <a href="#formulario" class="skip-link">Saltar al contenido</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Profesor Ponzoni</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">¿Quién Soy?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matematica.html">Matemática</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fisicoquimica.html">Fisicoquímica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fisica.html">Física</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <header class="container mt-5 pt-5">
+      <h1>Profesor Ponzoni</h1>
+      <h2>Tu lugar para aprender</h2>
+    </header>
     <hr />
-    <div class="texto">
-      <h3>Si queres aprender no importa la edad ni el momento</h2>
-      <form action="/cargar-datos" method="post">
-        <label for="nombre">Nombre </label>
-        <input type="text" id="nombre" name="nombre" required /><br />
-        <label for="curso">Que materia te interesa:</label>
-        <select name="" id="">
-          <option value="">Matematica</option>
-          <option value="">Fisica</option>
-          <option value="">Fisicoquimica</option></select
-        ><br />
-        <label for="año">Selecciona el año</label>
-        <select name="" id="">
-          <option value="">1°</option>
-          <option value="">2°</option>
-          <option value="">3°</option>
-          <option value="">4°</option>
-          <option value="">5°</option>
-          <option value="">6°</option></select
-        ><br />
-        <label for="horario">Horario disponible</label>
-        <input type="radio" name="" id="" />
-        <label for="">Mañana</label>
-        <input type="radio" name="" id="" />
-        <label for="">Tarde</label>
-        <input type="radio" name="" id="" />
-        <label for="">Noche</label><br />
-        <input type="submit" value="Enviar" />
+    <div class="container my-5">
+      <h3 class="text-center">
+        Si quieres aprender, no importa la edad ni el momento
+      </h3>
+      <form id="formulario" action="o" method="post" class="text-center">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="curso" class="form-label"
+            >¿Qué materia te interesa?</label
+          >
+          <select name="curso" id="curso" class="form-select" required>
+            <option value="">Matemática</option>
+            <option value="">Física</option>
+            <option value="">Fisicoquímica</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="año" class="form-label">Selecciona el año</label>
+          <select name="año" id="año" class="form-select" required>
+            <option value="">1°</option>
+            <option value="">2°</option>
+            <option value="">3°</option>
+            <option value="">4°</option>
+            <option value="">5°</option>
+            <option value="">6°</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Horario disponible</label><br />
+          <input
+            type="radio"
+            name="horario"
+            id="mañana"
+            value="mañana"
+            required
+          />
+          <label for="mañana">Mañana</label>
+          <input
+            type="radio"
+            name="horario"
+            id="tarde"
+            value="tarde"
+            required
+          />
+          <label for="tarde">Tarde</label>
+          <input
+            type="radio"
+            name="horario"
+            id="noche"
+            value="noche"
+            required
+          />
+          <label for="noche">Noche</label>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-primary" />
       </form>
     </div>
-    <footer>
+    <footer class="text-center">
       <p>
         © 2025 Ponzoni - "La educación, como la luz del sol, puede y debe llegar
         a todos"
       </p>
     </footer>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
