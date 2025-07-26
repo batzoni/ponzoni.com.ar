@@ -34,6 +34,7 @@ h1 {
   font-size: 36px;
   color: #ffd700; /* Amarillo dorado, destaca en fondo oscuro */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Para mejor contraste */
+  display: block;
 }
 
 h2 {
@@ -53,7 +54,8 @@ h3 {
 }
 
 p {
-  margin: 15px;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin: 15px 0; /* Margen vertical de 15 píxeles, sin margen lateral */
 }
 
 ul {
@@ -108,22 +110,22 @@ li a:hover {
   text-decoration: underline;
 }
 .texto {
-  width: 75vw;
-  min-height: 55vh;
-  padding: 5px;
-  margin-left: auto; /* Para centrar horizontalmente */
-  margin-right: auto; /* Para centrar horizontalmente */
-  background-color: #f0f0f0; /* Fondo, podés cambiar el color */
-  border: 2px solid #333; /* Recuadro, podés ajustar grosor y color */
+  padding: 5px; /* Espaciado interno */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: #f0f0f0; /* Fondo, puedes cambiar el color */
+  border: 2px solid #333; /* Recuadro, puedes ajustar grosor y color */
   box-sizing: border-box; /* Para que el padding y borde no alteren el ancho total */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 100%; /* Ocupar todo el ancho disponible */
 }
 
 /* Selectores de ID */
 #cursos {
   color: #4a4e69;
-  margin-left: 10px;
+  margin-left: 2px;
   text-align: center; /* Centra el texto */
-  font-size: 1.5rem; /* Aumenta el tamaño de la letra (puedes ajustar) */
+  font-size: 5rem; /* Aumenta el tamaño de la letra (puedes ajustar) */
 }
 
 ol {
@@ -132,4 +134,18 @@ ol {
   gap: 20px; /* espacio entre columnas y filas */
   padding: 0;
   list-style: none; /* para quitar los números si querés */
+}
+.container {
+  display: flex; /* Usar flexbox para el contenedor */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias filas */
+  justify-content: space-around; /* Espaciado entre los elementos */
+}
+section {
+  flex: 1 1 30%; /* Permitir que cada sección ocupe al menos el 30% del ancho */
+  max-width: 30%; /* Limitar el ancho máximo de cada sección */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+  margin: 10px; /* Espaciado entre secciones */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f8f9fa; /* Color de fondo */
+  text-align: center; /* Alinear el texto al centro */
 }
